@@ -1,0 +1,16 @@
+int principality() {
+    int id
+
+    // Solicitar al usuario que ingrese un número
+    cout "Ingresa un numero entero: "
+    cin id
+
+    // Comprobar si el número es par o impar usando una estructura de control if-else
+    if (id % 2 == 0) do
+        cout id " es un numero par." endl
+    endif else do
+        cout id " es un numero impar." endl
+    endif
+
+    return 0
+}

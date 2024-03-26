@@ -1,0 +1,29 @@
+// RECURSIVIDAD
+
+int sumDigit(int n) do
+    if (n < 10) do
+        return n
+    endif else do
+        return n % 10 + sumDigit(n / 10)
+    endif
+end
+
+int digitalRoot(int n) do
+    int sum = sumDigit(n)
+    if (sum >= 10) do
+        return digitalRoot(sum)
+    endif else do
+        return sum
+    endif
+end
+
+int principality() {
+    int num
+    cout "Digite un numero: " endl
+    cin num
+    cout "La raiz digital de " num " es: " digitalRoot(num) endl
+
+    return 0
+}
+
+
